@@ -81,7 +81,7 @@ Based on the given requirements, implement `Tile` as a stateless component that 
 - Receive two props:
   - name
   - description
-- Render a `<p>` element with the name `prop`. Give this element a className of `"tile-title"`.
+- Render a `<p>` element with the `name` prop. Give this element a className of `"tile-title"`.
 - Iterate over the values in the `description` object, passed in via props, and render a `<p>` element for each value and give each a `className` of `"tile"`.
 
 Just like the `TileList` component, the Tile component is generalized to work with data from any object. This allows it to be used in both the `ContactsPage` and `AppointmentsPage` components.
