@@ -3,7 +3,7 @@ import { useState } from "react";
 import { AppointmentForm } from "../../components/appointmentForm/AppointmentForm";
 import { TileList } from "../../components/tileList/TileList";
 
-export const AppointmentsPage = (appointments, contacts, addNewAppointment) => {
+export const AppointmentsPage = ({appointments, contacts, addNewAppointment}) => {
   const [title, setTitle] = useState('');
   const [contact, setContact] = useState('');
   const [date, setDate] = useState('');

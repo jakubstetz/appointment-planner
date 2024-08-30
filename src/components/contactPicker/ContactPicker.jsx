@@ -1,4 +1,4 @@
-export const ContactPicker = (contacts, changeHandler, value, name) => {
+export const ContactPicker = ({contacts, changeHandler, value, name}) => {
   return (
     <select>
       <option value="">No Contact Selected</option>
