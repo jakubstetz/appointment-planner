@@ -20,10 +20,10 @@ export const AppointmentForm = ({
 
   return (
     <form onSubmit={handleSubmit}>
-      <input id="title" value={title} type="text" placeholder="Enter title."></input>
-      <input id="date" value={date} type="date" placeholder="Enter date." min={getTodayString()}></input>
-      <input id="time" value={time} type="time" placeholder="Enter time."></input>
-      <ContactPicker contacts={contacts} />
+      <input name="title" value={title} onChange={({target: {value}}) => setTitle(value)} type="text" placeholder="Enter title."></input>
+      <input name="date" value={date} onChange={({target: {value}}) => setDate(value)} type="date" placeholder="Enter date." min={getTodayString()}></input>
+      <input name="time" value={time} onChange={({target: {value}}) => setTime(value)} type="time" placeholder="Enter time."></input>
+      <ContactPicker name='contact' value={contact} contacts={contacts} changeHandler={({target: {value}}) => setContact(value)} />
       <input type='submit'></input>
     </form>
   );

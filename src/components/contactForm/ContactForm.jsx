@@ -9,9 +9,9 @@ export const ContactForm = ({
 }) => {
   return (
     <form onSubmit={handleSubmit}>
-      <input id="name" value={name} type="text" placeholder="Enter name."></input>
-      <input id="phone" value={phone} type="text" placeholder="Enter phone number." pattern="^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"></input>
-      <input id="emial" value={email} type="text" placeholder="Enter email."></input>
+      <input name="name" value={name} onChange={({target: {value}}) => setName(value)} type="text" placeholder="Enter name."></input>
+      <input name="phone" value={phone} onChange={({target: {value}}) => setPhone(value)} type="text" placeholder="Enter phone number." pattern="^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"></input>
+      <input name="email" value={email} onChange={({target: {value}}) => setEmail(value)} type="text" placeholder="Enter email."></input>
       <input type="submit"></input>
     </form>
   );
