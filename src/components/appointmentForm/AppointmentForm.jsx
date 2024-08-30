@@ -19,6 +19,12 @@ export const AppointmentForm = ({
 }) => {
 
   return (
-    <></>
+    <form onSubmit={handleSubmit}>
+      <input id="title" value={title} type="text" placeholder="Enter title."></input>
+      <input id="date" value={date} type="date" placeholder="Enter date." min={getTodayString()}></input>
+      <input id="time" value={time} type="time" placeholder="Enter time."></input>
+      <ContactPicker contacts={contacts} />
+      <input type='submit'></input>
+    </form>
   );
 };
