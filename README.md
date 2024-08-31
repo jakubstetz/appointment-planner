@@ -110,7 +110,7 @@ Based on the given requirements, implement `AppointmentForm` as a stateless comp
 - Render a form with:
   - The `onSubmit` attribute set to the callback function passed in via `props`.
   - 3 controlled `input` components, to be used for the name, date and time appointment data.
-  - A C`ontactPicker` component with the contacts list passed in via props.
+  - A `ContactPicker` component with the contacts list passed in via props.
   - A submit button.
 - Use `getTodayString()` to set the `min` attribute of the date `input`.
 
@@ -126,29 +126,6 @@ Based on the given requirements, implement `ContactPicker` as a stateless compon
 - Render a `select` element with the `onChange` attribute set to the callback passed in via props, a `value` attribute set to the `value` prop, and a `name` attribute set to the `name` prop.
 - Add a default `option` element with the text “No Contact Selected” and a `value` attribute of `""`.
 - Iteratively add `option` elements using the contact names from the array passed in via props
-
-
-
-
-
-
-
-### Project Features
-
-- Users can search for songs by song title.
-  - You can also include functionality to search by other attributes like artist’s name, genre, etc.
-- Users can see information about each song like title, artist, and album for songs they queried
-  - You can also include other information – the design is up to you
-- Users can export their custom playlist to their personal Spotify account
-
-### Project Prerequisites
-
-- HTML
-- CSS
-- JavaScript
-- React
-- HTTP Requests and Responses
-- Authentication
 
 ## Technologies Used
 
