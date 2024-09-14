@@ -1,12 +1,20 @@
-# Jammming
+# Appointment Planner
 
 ## Description
 
-This project was completed as part of the Codecademy Full-Stack Engineer skill path; it constitutes a challenge project on the skill path.
+This project was completed as part of the Codecademy Full-Stack Engineer skill path; it constitutes a lesson review project on the skill path.
 
-This web application...
+This web application serves as a simple appointment planner, where in one can create, track, and delete appointments and contacts.
 
 The purpose of this project was to practice working with stateful and stateless components and communicating between them, and to practice implementing forms in React.
+
+## Skills Practiced
+
+- *React:*
+  - States
+  - Handlers
+  - Passing properties between components
+  - Forms
 
 ## Original Codecademy Prompt
 
@@ -126,37 +134,6 @@ Based on the given requirements, implement `ContactPicker` as a stateless compon
 - Render a `select` element with the `onChange` attribute set to the callback passed in via props, a `value` attribute set to the `value` prop, and a `name` attribute set to the `name` prop.
 - Add a default `option` element with the text “No Contact Selected” and a `value` attribute of `""`.
 - Iteratively add `option` elements using the contact names from the array passed in via props
-
-## Technologies Used
-
-...
-
-## Features
-
-...
-
-## Future Work
-
-...
-
-## Lessons Learned / Skills Practiced
-
-*File Management*
-This project has the most complicated filesystem that I had yet to work with. Therefore, throughout this practice I got a lot of practice with...
-
-*Git Version Control*
-...
-
-*React*
-...
-
-*JSON*
-...
-
-*API*
-...
-
-*Styling*
 
 ## License
 
